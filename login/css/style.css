@@ -1,0 +1,61 @@
+:root{
+  --bg:#0f1115;
+  --panel:#161a22;
+  --border:rgba(255,255,255,.08);
+  --muted:rgba(255,255,255,.65);
+  --accent:#dc3545;
+}
+
+body{
+  background: radial-gradient(1000px 500px at 20% 10%, rgba(220,53,69,.15), transparent 60%),
+              radial-gradient(900px 500px at 80% 0%, rgba(255,255,255,.05), transparent 60%),
+              var(--bg);
+  color:white;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.login-card{
+  background:linear-gradient(180deg, rgba(255,255,255,.03), transparent 90%), var(--panel);
+  border:1px solid var(--border);
+  border-radius:12px;
+  width:100%;
+  max-width:420px;
+}
+
+.login-header{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.login-header h1{
+  font-size:28px;
+  font-weight:700;
+}
+
+.login-header p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.form-control{
+  background:#121620;
+  border:1px solid var(--border);
+  color:white;
+}
+
+.form-control:focus{
+  background:#121620;
+  color:white;
+  border-color:var(--accent);
+  box-shadow:none;
+}
+
+.login-footer{
+  text-align:center;
+  margin-top:20px;
+  font-size:14px;
+  color:var(--muted);
+}
